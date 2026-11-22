@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Software Testing Workshop Registration</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <h1>Software Testing Workshop Registration</h1>
+
+        <p class="intro">
+            Complete the form below to register for a software testing workshop.
+        </p>
+
+        <form id="registrationForm" novalidate>
+
+            <!-- Full Name -->
+            <div class="form-group">
+
+                <label for="fullName">Full Name</label>
+
+                <input
+                    type="text"
+                    id="fullName"
+                    name="fullName"
+                    placeholder="Enter your full name">
+
+                <p
+                    id="nameError"
+                    class="error-message">
+                </p>
+
+            </div>
+
+
+            <!-- Email Address -->
+            <div class="form-group">
+
+                <label for="email">Email Address</label>
+
+                <input
+                    type="text"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email address">
+
+                <p
+                    id="emailError"
+                    class="error-message">
+                </p>
+
+            </div>
+
+
+            <!-- Workshop -->
+            <div class="form-group">
+
+                <label for="workshop">Workshop</label>
+
+                <select
+                    id="workshop"
+                    name="workshop">
+
+                    <option value="">
+                        Select a workshop
+                    </option>
+
+                    <option value="browser-testing">
+                        Advanced Browser Testing
+                    </option>
+
+                    <option value="api-testing">
+                        API Testing
+                    </option>
+
+                    <option value="unit-testing">
+                        Unit Testing
+                    </option>
+
+                </select>
+
+                <p
+                    id="workshopError"
+                    class="error-message">
+                </p>
+
+            </div>
+
+
+            <!-- Experience -->
+            <div class="form-group">
+
+                <label for="experience">
+                    Experience Level
+                </label>
+
+                <select
+                    id="experience"
+                    name="experience">
+
+                    <option value="">
+                        Select your experience
+                    </option>
+
+                    <option value="beginner">
+                        Beginner
+                    </option>
+
+                    <option value="intermediate">
+                        Intermediate
+                    </option>
+
+                    <option value="advanced">
+                        Advanced
+                    </option>
+
+                </select>
+
+                <p
+                    id="experienceError"
+                    class="error-message">
+                </p>
+
+            </div>
+
+
+            <!-- Terms -->
+            <div class="form-group checkbox-group">
+
+                <input
+                    type="checkbox"
+                    id="terms"
+                    name="terms">
+
+                <label for="terms">
+                    I agree to the workshop terms
+                </label>
+
+            </div>
+
+            <p
+                id="termsError"
+                class="error-message">
+            </p>
+
+
+            <!-- Register Button -->
+            <button type="submit">
+                Register
+            </button>
+
+        </form>
+
+
+        <!-- Registration Result -->
+        <div
+            id="resultMessage"
+            class="result-message"
+            role="status"
+            aria-live="polite">
+        </div>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
